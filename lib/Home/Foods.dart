@@ -7,10 +7,17 @@ class Foods extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
+    return GridView.builder(
+      shrinkWrap: true,
+      physics: NeverScrollableScrollPhysics(),
+      gridDelegate:
+          new SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
       itemCount: 10,
       itemBuilder: (BuildContext context, int index) {
-        return FoodCArd();
+        return Padding(
+          padding: EdgeInsets.symmetric(horizontal: 15, vertical: 5),
+          child: FoodCArd(),
+        );
       },
     );
   }
