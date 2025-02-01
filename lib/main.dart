@@ -1,4 +1,4 @@
-import 'package:fizzy/Home/HomePage.dart';
+import 'package:fizzy/view/Home/HomePage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
