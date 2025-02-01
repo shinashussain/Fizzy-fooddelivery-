@@ -9,6 +9,8 @@ class Cart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 350.h,
+      width: 303.w,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(20)),
           color: Colors.white,
