@@ -70,7 +70,7 @@ class Cart extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      ' ₹ 150',
+                      '₹ 150',
                       style: GoogleFonts.roboto(
                           color: Colors.black,
                           fontSize: 24.sp,
@@ -80,7 +80,58 @@ class Cart extends StatelessWidget {
                 );
               }),
           SizedBox(
-            child: Column(),
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'platform fee',
+                      style:
+                          GoogleFonts.roboto(color: Colors.black, fontSize: 20),
+                    ),
+                    Text(
+                      '₹ 5',
+                      style:
+                          GoogleFonts.roboto(color: Colors.black, fontSize: 20),
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'delivery fee',
+                      style:
+                          GoogleFonts.roboto(color: Colors.black, fontSize: 20),
+                    ),
+                    Text(
+                      '₹ 50',
+                      style:
+                          GoogleFonts.roboto(color: Colors.black, fontSize: 20),
+                    ),
+                  ],
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      'TO pay',
+                      style:
+                          GoogleFonts.roboto(color: Colors.black, fontSize: 20),
+                    ),
+                    Text(
+                      '₹ 505',
+                      style:
+                          GoogleFonts.roboto(color: Colors.black, fontSize: 20),
+                    ),
+                  ],
+                ),
+              ],
+            ),
           )
         ],
       ),
