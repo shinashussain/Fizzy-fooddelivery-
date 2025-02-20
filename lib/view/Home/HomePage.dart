@@ -1,3 +1,4 @@
+import 'package:fizzy/view/DeliveryDetails/Delivery_Details.dart';
 import 'package:fizzy/view/Home/Foods.dart';
 import 'package:fizzy/const/apptheme.dart';
 import 'package:flutter/material.dart';
@@ -32,10 +33,11 @@ class HomePage extends StatelessWidget {
                   padding: EdgeInsets.only(top: 30, left: 18),
                   child: IconButton(
                     onPressed: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => CartPage()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => DeliveryDetails()),
+                      );
                     },
                     icon: Icon(
                       Icons.account_circle,
