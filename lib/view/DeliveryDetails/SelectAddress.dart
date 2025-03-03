@@ -14,6 +14,7 @@ class SelectAddress extends StatelessWidget {
           borderRadius: BorderRadius.all(Radius.circular(25)),
           color: backgrountcolor),
       child: Column(
+        mainAxisSize: MainAxisSize.min,
         children: [
           Align(
             alignment: Alignment.centerLeft,
@@ -99,10 +100,9 @@ class SelectAddress extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
-            height: 27.h,
-          ),
           ListView.builder(
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
             itemCount: 1,
             itemBuilder: (context, index) {
               return SavedAddress();

@@ -112,6 +112,7 @@ class Cart extends StatelessWidget {
             child: InkWell(
                 onTap: () {
                   showModalBottomSheet(
+                      isScrollControlled: true,
                       context: context,
                       builder: (builder) {
                         return SelectAddress();
