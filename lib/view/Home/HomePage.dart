@@ -1,3 +1,5 @@
+import 'package:fizzy/view/DeliveryDetails/Addresses/AddAddress.dart';
+import 'package:fizzy/view/DeliveryDetails/Addresses/test.dart';
 import 'package:fizzy/view/DeliveryDetails/Cart.dart';
 import 'package:fizzy/view/Home/Foods.dart';
 import 'package:fizzy/const/apptheme.dart';
@@ -35,7 +37,7 @@ class HomePage extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => Cart()),
+                        MaterialPageRoute(builder: (context) => AddAddress()),
                       );
                     },
                     icon: Icon(

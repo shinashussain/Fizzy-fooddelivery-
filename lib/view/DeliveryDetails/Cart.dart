@@ -1,7 +1,7 @@
 import 'package:fizzy/const/apptheme.dart';
 import 'package:fizzy/view/Custem_Widgets/Counter.dart';
 import 'package:fizzy/view/Custem_Widgets/button.dart';
-import 'package:fizzy/view/DeliveryDetails/SelectAddress.dart';
+import 'package:fizzy/view/DeliveryDetails/Addresses/SelectAddress.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
