@@ -34,6 +34,8 @@ class AddAddress extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar:
+          AppBar(backgroundColor: Colors.white, surfaceTintColor: Colors.white),
       // resizeToAvoidBottomInset: false,
       backgroundColor: Colors.white,
       body: SingleChildScrollView(
@@ -42,9 +44,6 @@ class AddAddress extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(
-                height: 62.h,
-              ),
               Container(
                 height: 66.h,
                 width: 360.w,
